@@ -39,5 +39,20 @@ function giveBirth() {
 }
 // don't judge me
 
+// this block of code changes the text in the footer by giving it a class of 'change this'
+var changePTag = document.getElementById('needChange');
+changePTag.classList.add('changeThis');
+
+// this block of code changes all those "ugly texts" with the class of 'change this', to something more fun!
+var changeThis = document.getElementsByClassName('changeThis');
+for (var i=0; i<changeThis.length; i++) {
+    changeThis[i].innerText = `Good thing I won't be graded by how bad I look!`;
+}
+
+// this block of code messes around with the class of the footer
+var classChange = document.getElementById('classListTest');
+classChange.classList.add("goodClass");
+classChange.classList.remove("removeThis");
+classChange.classList.toggle("goodClass");
 
 // That's all folks!
