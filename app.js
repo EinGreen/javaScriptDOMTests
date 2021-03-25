@@ -32,3 +32,8 @@ var alexCoolReference = document.createElement('h3');
 randomSection.append(alexCoolReference);
 alexCoolReference.innerText = `I was born by JS, molded by it -Alex (Probably)`;
 
+function giveBirth() {
+    var t = document.createTextNode("Never Gonna Give You Up, Never Gonna Let You Down ");
+    document.body.appendChild(t);
+}
+
